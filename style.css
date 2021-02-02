@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background: rgb(205,235,247);
+  background: linear-gradient(90deg, rgba(205,235,247,1) 0%, rgba(239,250,255,1) 51%, rgba(205,235,247,1) 100%);
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  width: 750px;
+  height: 480px;
+}
+
+a {
+  color: #45373f;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #432d39;
+  font-weight: 600;
+}
+h2{
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #432d39;
+}
+
+#timer {
+  color: #F6F4F3;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 5px;
+  margin-top: -45px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px 15px 10px 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.days {
+  background: #432d39;
+  color: #FFF;
+}
+
+.hours {
+  background: #432d39;
+  color: #FFF;
+}
+
+.minutes {
+  background: #432d39;
+  color: #FFF;
+}
+
+.seconds {
+  background: #432d39;
+  color: #FFF;
+}
+.numbers {
+  font-family: "Quicksand", sans-serif;
+  color: #FFF;
+  font-size: 4em;
+  margin-top:2px;
+}
+
+.white {
+  position: absolute;
+  background: #FFF;
+  height: 85px;
+  width: 75px;
+  left: 74%;
+  top: -10%;
+}
+.white .triangle {
+  border-bottom: 14px solid #FFF;
+}
+.white .string {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+.red {
+  position: absolute;
+  background: #FFF;
+  left: 22%;
+  top: -10%;
+  height: 65px;
+  width: 70px;
+}
+.red .triangle {
+  border-bottom: 14px solid#FFF;
+}
+.red .string {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+.blue {
+  position: absolute;
+  background:#FFF;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: -17%;
+}
+.blue .triangle {
+  border-bottom: 14px solid #FFF;
+}
+.blue .string {
+  background: #FFF;
+  border: 1px solid #FFF;
+}
+
+.balloon {
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #432d39;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.eye:after {
+  content: "";
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #432d39;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #432d39 #432d39 transparent;
+  transform: rotate(45deg);
+  opacity: 0.5;
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #F6F4F3;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #EF2F3C;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.5em;
+}
+footer p {
+  letter-spacing: 3px;
+  color: #F6F4F3;
+}
+footer a {
+  color: #F6F4F3;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #276FBF;
+}
+
+
+@media only screen and (max-width: 420px) {
+
+    .container {
+      position: relative;
+      margin: auto;
+      width: 95%;
+     
+    }
+    .balloon {
+      margin-left: -30px !important;
+      margin-top: 45px;
+    }
+    #timer {
+      color: #F6F4F3;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Quicksand", sans-serif;
+      font-size: 0.7em;
+      letter-spacing: 1px;
+      margin-top:0px;
+    }
+    .days, .hours, .minutes, .seconds {
+      display: inline-block;
+      padding: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    .numbers {
+      font-family: "Quicksand", sans-serif;
+      color: #FFF;
+      font-size: 3em;
+      margin-top:-3px;
+    }
+    .days{
+      font-size: 8px;
+    }
+    .minutes{
+      font-size:8px;
+    }
+    .hours{
+      font-size: 8px;
+    }
+    .seconds{
+      font-size: 8px;
+    }
+    h1 {
+      font-size:16px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+    .poke {
+      margin-top: 120px;
+    }
+}
