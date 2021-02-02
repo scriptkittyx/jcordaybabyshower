@@ -17,6 +17,13 @@ body {
   height: 480px;
 }
 
+p {
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+  margin: 1em;
+  
+}
+
 a {
   color: #45373f;
   text-decoration: none;
@@ -46,6 +53,10 @@ h2{
   color: #432d39;
 }
 
+.icon {
+  font-size: 28px !important; 
+  padding: 5px;
+}
 #timer {
   color: #F6F4F3;
   text-align: center;
@@ -249,7 +260,7 @@ footer a:hover {
     }
     .balloon {
       margin-left: -30px !important;
-      margin-top: 45px;
+      margin-top: 35px;
     }
     #timer {
       color: #F6F4F3;
@@ -292,6 +303,6 @@ footer a:hover {
       font-size: 13px;
     }
     .poke {
-      margin-top: 120px;
+      margin-top: 60px;
     }
 }
